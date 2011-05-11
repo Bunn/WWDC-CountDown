@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3190D9861379C66800B76B03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190D9851379C66800B76B03 /* UIKit.framework */; };
+		3190D9881379C66800B76B03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190D9871379C66800B76B03 /* Foundation.framework */; };
+		3190D98A1379C66800B76B03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190D9891379C66800B76B03 /* CoreGraphics.framework */; };
+		3190D9901379C66800B76B03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3190D98E1379C66800B76B03 /* InfoPlist.strings */; };
+		3190D9931379C66800B76B03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190D9921379C66800B76B03 /* main.m */; };
+		3190D9961379C66800B76B03 /* WWDCCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190D9951379C66800B76B03 /* WWDCCAppDelegate.m */; };
+		3190D9991379C66800B76B03 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3190D9971379C66800B76B03 /* MainWindow.xib */; };
+		3190D9A01379C6C400B76B03 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3190D99F1379C6C400B76B03 /* icon.png */; };
+		3190D9A31379C6EC00B76B03 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190D9A21379C6EC00B76B03 /* CountDownViewController.m */; };
+		3190D9C41379D5A900B76B03 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 3190D9C21379D5A900B76B03 /* clock.png */; };
+		3190D9C51379D5A900B76B03 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3190D9C31379D5A900B76B03 /* clock@2x.png */; };
+		31C16677137B12AE0004275D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 31C16675137B12AE0004275D /* Default.png */; };
+		31C16678137B12AE0004275D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31C16676137B12AE0004275D /* Default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3190D9811379C66800B76B03 /* WWDCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3190D9851379C66800B76B03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3190D9871379C66800B76B03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3190D9891379C66800B76B03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3190D98D1379C66800B76B03 /* WWDCC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WWDCC-Info.plist"; sourceTree = "<group>"; };
+		3190D98F1379C66800B76B03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3190D9911379C66800B76B03 /* WWDCC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWDCC-Prefix.pch"; sourceTree = "<group>"; };
+		3190D9921379C66800B76B03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3190D9941379C66800B76B03 /* WWDCCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWDCCAppDelegate.h; sourceTree = "<group>"; };
+		3190D9951379C66800B76B03 /* WWDCCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDCCAppDelegate.m; sourceTree = "<group>"; };
+		3190D9981379C66800B76B03 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		3190D99F1379C6C400B76B03 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		3190D9A11379C6EC00B76B03 /* CountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownViewController.h; sourceTree = "<group>"; };
+		3190D9A21379C6EC00B76B03 /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
+		3190D9C21379D5A900B76B03 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		3190D9C31379D5A900B76B03 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		31C16675137B12AE0004275D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		31C16676137B12AE0004275D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3190D97E1379C66800B76B03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3190D9861379C66800B76B03 /* UIKit.framework in Frameworks */,
+				3190D9881379C66800B76B03 /* Foundation.framework in Frameworks */,
+				3190D98A1379C66800B76B03 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3190D9761379C66800B76B03 = {
+			isa = PBXGroup;
+			children = (
+				3190D98B1379C66800B76B03 /* WWDCC */,
+				3190D9841379C66800B76B03 /* Frameworks */,
+				3190D9821379C66800B76B03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3190D9821379C66800B76B03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3190D9811379C66800B76B03 /* WWDCC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3190D9841379C66800B76B03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3190D9851379C66800B76B03 /* UIKit.framework */,
+				3190D9871379C66800B76B03 /* Foundation.framework */,
+				3190D9891379C66800B76B03 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3190D98B1379C66800B76B03 /* WWDCC */ = {
+			isa = PBXGroup;
+			children = (
+				3190D9941379C66800B76B03 /* WWDCCAppDelegate.h */,
+				3190D9951379C66800B76B03 /* WWDCCAppDelegate.m */,
+				3190D9A11379C6EC00B76B03 /* CountDownViewController.h */,
+				3190D9A21379C6EC00B76B03 /* CountDownViewController.m */,
+				3190D9A41379CDC700B76B03 /* Images */,
+				3190D98C1379C66800B76B03 /* Supporting Files */,
+			);
+			path = WWDCC;
+			sourceTree = "<group>";
+		};
+		3190D98C1379C66800B76B03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3190D9971379C66800B76B03 /* MainWindow.xib */,
+				3190D98D1379C66800B76B03 /* WWDCC-Info.plist */,
+				3190D98E1379C66800B76B03 /* InfoPlist.strings */,
+				3190D9911379C66800B76B03 /* WWDCC-Prefix.pch */,
+				3190D9921379C66800B76B03 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3190D9A41379CDC700B76B03 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				31C16675137B12AE0004275D /* Default.png */,
+				31C16676137B12AE0004275D /* Default@2x.png */,
+				3190D9C21379D5A900B76B03 /* clock.png */,
+				3190D9C31379D5A900B76B03 /* clock@2x.png */,
+				3190D99F1379C6C400B76B03 /* icon.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3190D9801379C66800B76B03 /* WWDCC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3190D99C1379C66800B76B03 /* Build configuration list for PBXNativeTarget "WWDCC" */;
+			buildPhases = (
+				3190D97D1379C66800B76B03 /* Sources */,
+				3190D97E1379C66800B76B03 /* Frameworks */,
+				3190D97F1379C66800B76B03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WWDCC;
+			productName = WWDCC;
+			productReference = 3190D9811379C66800B76B03 /* WWDCC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3190D9781379C66800B76B03 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3190D97B1379C66800B76B03 /* Build configuration list for PBXProject "WWDCC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3190D9761379C66800B76B03;
+			productRefGroup = 3190D9821379C66800B76B03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3190D9801379C66800B76B03 /* WWDCC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3190D97F1379C66800B76B03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3190D9901379C66800B76B03 /* InfoPlist.strings in Resources */,
+				3190D9991379C66800B76B03 /* MainWindow.xib in Resources */,
+				3190D9A01379C6C400B76B03 /* icon.png in Resources */,
+				3190D9C41379D5A900B76B03 /* clock.png in Resources */,
+				3190D9C51379D5A900B76B03 /* clock@2x.png in Resources */,
+				31C16677137B12AE0004275D /* Default.png in Resources */,
+				31C16678137B12AE0004275D /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3190D97D1379C66800B76B03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3190D9931379C66800B76B03 /* main.m in Sources */,
+				3190D9961379C66800B76B03 /* WWDCCAppDelegate.m in Sources */,
+				3190D9A31379C6EC00B76B03 /* CountDownViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3190D98E1379C66800B76B03 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3190D98F1379C66800B76B03 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3190D9971379C66800B76B03 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3190D9981379C66800B76B03 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3190D99A1379C66800B76B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3190D99B1379C66800B76B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		3190D99D1379C66800B76B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWDCC/WWDCC-Prefix.pch";
+				INFOPLIST_FILE = "WWDCC/WWDCC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3190D99E1379C66800B76B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWDCC/WWDCC-Prefix.pch";
+				INFOPLIST_FILE = "WWDCC/WWDCC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3190D97B1379C66800B76B03 /* Build configuration list for PBXProject "WWDCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3190D99A1379C66800B76B03 /* Debug */,
+				3190D99B1379C66800B76B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3190D99C1379C66800B76B03 /* Build configuration list for PBXNativeTarget "WWDCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3190D99D1379C66800B76B03 /* Debug */,
+				3190D99E1379C66800B76B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3190D9781379C66800B76B03 /* Project object */;
+}
