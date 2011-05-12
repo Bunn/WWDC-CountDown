@@ -153,7 +153,7 @@
             case 3:cell.detailTextLabel.text = [NSString stringWithFormat:@"%i",abs([components second])];
                 break;
         }
-        [table reloadData];
+        [cell setNeedsLayout];
     }
 }
 
