@@ -8,23 +8,23 @@
 
 #import "CountDownViewController.h"
 
-#define WWDC_YEAR 2011
+#define WWDC_YEAR 2013
 #define WWDC_MONTH 6
-#define WWDC_DAY 6
+#define WWDC_DAY 10
 #define WWDC_HOUR 10
 #define WWDC_MINUTE 00
 #define WWDC_SECOND 00
 
-#define WWDC_ANNOUNCEMENT_DAY 28
+#define WWDC_ANNOUNCEMENT_DAY 24
 #define WWDC_ANNOUNCEMENT_MONTH 4
 
-#define SECTION_0_TITLE @"WWDC 2011 Countdown"
+#define SECTION_0_TITLE @"WWDC %i Countdown"
 #define SECTION_1_TITLE @"Progress"
 
-#define SECTION_0_FOOTER @"Assuming opening time: 06/06/2011 10:00AM PST"
-#define SECTION_1_FOOTER @"Difference between WWDC 2011 announcement and opening day"
+#define SECTION_0_FOOTER @"Assuming opening time: %i/%i/%i 10:00AM PST"
+#define SECTION_1_FOOTER @"Difference between WWDC %i announcement and opening day"
 
-#define COUNTDOWN_SECTION_ROWS_NUMBER 4
+#define COUNTDOWN_SECTION_ROWS_NUMBER 5
 
 #define PST @"US/Pacific"
 
@@ -144,13 +144,15 @@
         UITableViewCell *cell = [table cellForRowAtIndexPath:[NSIndexPath indexPathForRow:indexCell inSection:0]];
 
         switch (indexCell) {
-            case 0:cell.detailTextLabel.text = [NSString stringWithFormat:@"%i",abs([components day])];
+            case 0:cell.detailTextLabel.text = [NSString stringWithFormat:@"%i",abs([components month])];
                 break;
-            case 1:cell.detailTextLabel.text = [NSString stringWithFormat:@"%i",abs([components hour])];
+            case 1:cell.detailTextLabel.text = [NSString stringWithFormat:@"%i",abs([components day])];
                 break;
-            case 2:cell.detailTextLabel.text = [NSString stringWithFormat:@"%i",abs([components minute])];
+            case 2:cell.detailTextLabel.text = [NSString stringWithFormat:@"%i",abs([components hour])];
                 break;
-            case 3:cell.detailTextLabel.text = [NSString stringWithFormat:@"%i",abs([components second])];
+            case 3:cell.detailTextLabel.text = [NSString stringWithFormat:@"%i",abs([components minute])];
+                break;
+            case 4:cell.detailTextLabel.text = [NSString stringWithFormat:@"%i",abs([components second])];
                 break;
         }
         [cell setNeedsLayout];
@@ -192,15 +194,18 @@
         cell.detailTextLabel.font = [UIFont boldSystemFontOfSize:20];
         switch (indexPath.row) {
             case 0:
+                cellText = @"Months";
+                break;
+            case 1:
                 cellText = @"Days";
                 break;
-            case 1:                
+            case 2:
                 cellText = @"Hours";
                 break;
-            case 2:
+            case 3:
                 cellText = @"Minutes";
                 break;
-            case 3:
+            case 4:
                 cellText = @"Seconds";
                 break;
         }
@@ -221,7 +226,7 @@
     NSString *title = nil;
     
     if (section == 0) {
-        title = SECTION_0_TITLE;
+        title = [NSString stringWithFormat:SECTION_0_TITLE, WWDC_YEAR];
     } else {
         title = SECTION_1_TITLE;
         
@@ -232,9 +237,9 @@
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
     NSString *footer = nil;
     if (section == 0) {
-        footer = SECTION_0_FOOTER;
+        footer = [NSString stringWithFormat:SECTION_0_FOOTER, WWDC_DAY, WWDC_MONTH, WWDC_YEAR];
     } else {
-        footer = SECTION_1_FOOTER;
+        footer = [NSString stringWithFormat:SECTION_1_FOOTER, WWDC_YEAR];
 
     }
     return footer;
