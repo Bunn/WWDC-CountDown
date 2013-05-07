@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3162A2241739BBD0004B608D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3162A2231739BBD0004B608D /* Default-568h@2x.png */; };
+		3162A2351739BE7A004B608D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3162A2321739BE7A004B608D /* Default.png */; };
+		3162A2361739BE7A004B608D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3162A2331739BE7A004B608D /* Default@2x.png */; };
+		3162A2381739BEA8004B608D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3162A2371739BEA8004B608D /* Default-568h@2x.png */; };
 		3190D9861379C66800B76B03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190D9851379C66800B76B03 /* UIKit.framework */; };
 		3190D9881379C66800B76B03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190D9871379C66800B76B03 /* Foundation.framework */; };
 		3190D98A1379C66800B76B03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190D9891379C66800B76B03 /* CoreGraphics.framework */; };
@@ -19,13 +21,13 @@
 		3190D9A31379C6EC00B76B03 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3190D9A21379C6EC00B76B03 /* CountDownViewController.m */; };
 		3190D9C41379D5A900B76B03 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 3190D9C21379D5A900B76B03 /* clock.png */; };
 		3190D9C51379D5A900B76B03 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3190D9C31379D5A900B76B03 /* clock@2x.png */; };
-		31C16677137B12AE0004275D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 31C16675137B12AE0004275D /* Default.png */; };
-		31C16678137B12AE0004275D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31C16676137B12AE0004275D /* Default@2x.png */; };
 		31DEF9FE137C23F5007C07AB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31DEF9FD137C23F5007C07AB /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3162A2231739BBD0004B608D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		3162A2321739BE7A004B608D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3162A2331739BE7A004B608D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3162A2371739BEA8004B608D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3190D9811379C66800B76B03 /* WWDCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3190D9851379C66800B76B03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3190D9871379C66800B76B03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,8 +44,6 @@
 		3190D9A21379C6EC00B76B03 /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
 		3190D9C21379D5A900B76B03 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		3190D9C31379D5A900B76B03 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
-		31C16675137B12AE0004275D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		31C16676137B12AE0004275D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		31DEF9FD137C23F5007C07AB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,9 +116,9 @@
 		3190D9A41379CDC700B76B03 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				31C16675137B12AE0004275D /* Default.png */,
-				3162A2231739BBD0004B608D /* Default-568h@2x.png */,
-				31C16676137B12AE0004275D /* Default@2x.png */,
+				3162A2321739BE7A004B608D /* Default.png */,
+				3162A2371739BEA8004B608D /* Default-568h@2x.png */,
+				3162A2331739BE7A004B608D /* Default@2x.png */,
 				3190D9C21379D5A900B76B03 /* clock.png */,
 				3190D9C31379D5A900B76B03 /* clock@2x.png */,
 				31DEF9FD137C23F5007C07AB /* icon@2x.png */,
@@ -182,10 +182,10 @@
 				3190D9A01379C6C400B76B03 /* icon.png in Resources */,
 				3190D9C41379D5A900B76B03 /* clock.png in Resources */,
 				3190D9C51379D5A900B76B03 /* clock@2x.png in Resources */,
-				31C16677137B12AE0004275D /* Default.png in Resources */,
-				31C16678137B12AE0004275D /* Default@2x.png in Resources */,
 				31DEF9FE137C23F5007C07AB /* icon@2x.png in Resources */,
-				3162A2241739BBD0004B608D /* Default-568h@2x.png in Resources */,
+				3162A2351739BE7A004B608D /* Default.png in Resources */,
+				3162A2361739BE7A004B608D /* Default@2x.png in Resources */,
+				3162A2381739BEA8004B608D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
