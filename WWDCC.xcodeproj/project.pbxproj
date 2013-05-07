@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3162A2241739BBD0004B608D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3162A2231739BBD0004B608D /* Default-568h@2x.png */; };
 		3190D9861379C66800B76B03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190D9851379C66800B76B03 /* UIKit.framework */; };
 		3190D9881379C66800B76B03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190D9871379C66800B76B03 /* Foundation.framework */; };
 		3190D98A1379C66800B76B03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190D9891379C66800B76B03 /* CoreGraphics.framework */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3162A2231739BBD0004B608D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		3190D9811379C66800B76B03 /* WWDCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3190D9851379C66800B76B03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3190D9871379C66800B76B03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				31C16675137B12AE0004275D /* Default.png */,
+				3162A2231739BBD0004B608D /* Default-568h@2x.png */,
 				31C16676137B12AE0004275D /* Default@2x.png */,
 				3190D9C21379D5A900B76B03 /* clock.png */,
 				3190D9C31379D5A900B76B03 /* clock@2x.png */,
@@ -149,6 +152,9 @@
 /* Begin PBXProject section */
 		3190D9781379C66800B76B03 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
 			buildConfigurationList = 3190D97B1379C66800B76B03 /* Build configuration list for PBXProject "WWDCC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -179,6 +185,7 @@
 				31C16677137B12AE0004275D /* Default.png in Resources */,
 				31C16678137B12AE0004275D /* Default@2x.png in Resources */,
 				31DEF9FE137C23F5007C07AB /* icon@2x.png in Resources */,
+				3162A2241739BBD0004B608D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +264,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWDCC/WWDCC-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "WWDCC/WWDCC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -270,6 +278,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWDCC/WWDCC-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "WWDCC/WWDCC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
