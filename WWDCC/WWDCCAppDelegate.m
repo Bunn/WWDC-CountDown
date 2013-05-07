@@ -18,7 +18,6 @@
     CountDownViewController *countdownController = [[CountDownViewController alloc] init];
     countdownController.title = @"Countdown";
     countdownNavigation = [[UINavigationController alloc] initWithRootViewController:countdownController];
-    [countdownController release];
 
     countdownNavigation.navigationBar.barStyle = UIBarStyleBlackOpaque;    
     
@@ -29,10 +28,5 @@
 }
 
 
-- (void)dealloc {
-    [countdownNavigation release];
-    [_window release];
-    [super dealloc];
-}
 
 @end

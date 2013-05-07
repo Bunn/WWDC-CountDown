@@ -52,15 +52,13 @@
         [comps setTimeZone:[NSTimeZone timeZoneWithName:PST]];
         
         NSCalendar *cal = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-        wwdcDate = [[cal dateFromComponents:comps] retain];
+        wwdcDate = [cal dateFromComponents:comps];
         
         [comps setDay:WWDC_ANNOUNCEMENT_DAY];
         [comps setMonth:WWDC_ANNOUNCEMENT_MONTH];
         
-        announcementDate = [[cal dateFromComponents:comps] retain];
+        announcementDate = [cal dateFromComponents:comps];
         
-        [cal release];
-        [comps release];
     }
     
     return self;
@@ -69,14 +67,6 @@
 
 #pragma mark - Memory Management
 
-- (void)dealloc {
-    [progressBar release];
-    [table release];
-    [wwdcDate release];
-    [announcementDate release];
-    
-    [super dealloc];
-}
 
 
 #pragma mark - View lifecycle
@@ -91,7 +81,6 @@
     [mainView addSubview:table];
     
     self.view = mainView;
-    [mainView release];
 }
 
 - (void)viewDidLoad {
@@ -101,10 +90,8 @@
 }
 
 - (void)viewDidUnload {
-    [progressBar release];
     progressBar = nil;
     
-    [table release];
     table = nil;
     
     [super viewDidUnload];
@@ -183,7 +170,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
     cell.selectionStyle = UITableViewCellEditingStyleNone;
@@ -212,7 +199,6 @@
         cell.textLabel.text = cellText;
     }
     else if (indexPath.section == 1) {
-        [progressBar release];
         progressBar = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
         progressBar.frame = CGRectMake(0, 0, 280, 10);
         progressBar.center = cell.center;
